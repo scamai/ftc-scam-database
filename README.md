@@ -1,3 +1,39 @@
+<!-- monorepo-redirect:do-not-edit-above -->
+> # ⚠️ This repository has moved into a monorepo
+>
+> **`ftc-scam-database` now lives in [`scamai/product`](https://github.com/scamai/product) at
+> [`data/ftc-scam-phones/`](https://github.com/scamai/product/tree/HEAD/data/ftc-scam-phones).**
+> This repo is **archived (read-only)** — pushes are rejected by design. Full git
+> history was preserved via `git subtree`; nothing was lost.
+>
+> ⚠️ **Note:** the folder was renamed during consolidation — it is `data/ftc-scam-phones`, **not**
+> `ftc-scam-database`. An earlier version of this banner pointed at the old name and 404'd.
+>
+> ## ⛔ Your `git push` just failed? Move your work like this
+>
+> ```bash
+> # 1) from THIS old clone, export commits not yet on the default branch:
+> git format-patch origin/HEAD --stdout > /tmp/ftc-scam-database.patch
+>
+> # 2) clone just your slice of the monorepo (MBs, not the whole repo):
+> git clone --filter=blob:none --no-checkout https://github.com/scamai/product.git
+> cd product && git sparse-checkout init --cone && git sparse-checkout set data/ftc-scam-phones
+> git checkout main
+>
+> # 3) re-root your work under data/ftc-scam-phones/ and push a branch for a PR:
+> git checkout -b feat/ftc-scam-phones/my-unpushed-work
+> git am --directory=data/ftc-scam-phones/ /tmp/ftc-scam-database.patch
+> ```
+>
+> **NOTE — the import carried the default branch only.** If your work is on another
+> branch of this repo, it was *not* carried across. Check before assuming.
+>
+> **First time in the monorepo?** Read
+> [**How this monorepo works**](https://github.com/scamai/product#how-this-monorepo-works).
+>
+> ---
+> *Original README preserved below for reference.*
+
 # FTC Scam Database
 
 A comprehensive PostgreSQL database containing **6.45 million FTC scam complaint records** from 2022-2025.
