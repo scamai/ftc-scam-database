@@ -1,7 +1,4 @@
 <!-- monorepo-redirect:do-not-edit-above -->
-> # ⚠️ This repository moved
+> # ⚠️ Moved
 >
-> **`ftc-scam-database` is now `product/data-ftc-scam-phones`** — see https://github.com/scamai/product/tree/HEAD/data-ftc-scam-phones
-> This repo is archived (read-only). Full history was preserved.
-> To move unpushed work, see the monorepo's CONTRIBUTING / renew.md.
-
+> `ftc-scam-database` now lives in `scamai/product` at `data/ftc-scam-phones/`.
